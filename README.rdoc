@@ -1,0 +1,15 @@
+== so_social gem for Rails 3
+
+This gem adds helper methods to your views to easily add sharing functionality.
+so_social currently supports:
+* Facebook - Like Button
+* Twitter - Tweet Button
+* Google+ - +1 Button
+
+To add a button to your view, use one of these methods:
+
+```ruby
+  facebook_button
+  twitter_button
+  googleplus_button
+```
