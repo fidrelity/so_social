@@ -1,0 +1,1 @@
+require 'so_social/railtie' if defined? Rails
