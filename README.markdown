@@ -1,4 +1,4 @@
-== so_social gem for Rails 3
+# so_social gem for Rails 3
 
 This gem adds helper methods to your views to easily add sharing functionality.
 so_social currently supports:
@@ -12,7 +12,7 @@ To add a button to your view, use one of these methods:
 * `twitter_button`
 * `googleplus_button`
 
-=== Facebook Parameters
+## Facebook Parameters
 
 You can set all the attributes the Facebook Like Button supports via optional parameters.
 According to the [Facebook Documentation][fb] these attributes are:
@@ -40,7 +40,7 @@ According to the [Facebook Documentation][fb] these attributes are:
 <%= facebook_button(:layout => 'box_count', :action => 'recommend',  :send => true, :width => 100)  %>
 ```
 
-=== Twitter Parameters
+## Twitter Parameters
 
 [Twitter supports][twitter] the following attributes:
 
@@ -62,8 +62,8 @@ According to the [Facebook Documentation][fb] these attributes are:
 <%= twitter_button(:url => 'http://fidrelity.at', :text => 'hello world', :via => 'fidrelity', :lang => 'de') %>
 ```
 
-=== Google+ Parameters
-The Google +1 button supports the following attributes (for detailed documentation see [this][gplus):
+## Google+ Parameters
+The Google +1 button supports the following attributes (for detailed documentation see [this][gplus]):
 
 * href - defaults to current page URL
 * size - Sets the button size to render. Default: `standard`
@@ -97,7 +97,7 @@ The Google +1 button supports the following attributes (for detailed documentati
 
 
 [fb]: https://developers.facebook.com/docs/reference/plugins/like/
-[twittter]: https://dev.twitter.com/docs/tweet-button
+[twitter]: https://dev.twitter.com/docs/tweet-button
 [twinfo]: https://dev.twitter.com/docs/tweet-button#optout
 [gplus]: https://developers.google.com/+/plugins/+1button/
 
