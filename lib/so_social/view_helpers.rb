@@ -28,7 +28,7 @@ module SoSocial
       raw(
         <<-eos
           <script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
-          <div class='g-plusone gplusshare' data-href='http://fidrelity.at' data-size='#{options[:size]}' 
+          <div class='g-plusone gplusshare' data-href='#{options[:href]}' data-size='#{options[:size]}' 
             data-annotation='#{options[:annotation]}' data-width='#{options[:width]}' data-align='#{options[:align]}'
             data-expandTo='#{options[:expand_to]}' data-callback='#{options[:callback]}' 
             data-onstartinteraction='#{options[:on_start_interaction]}' data-onendinteraction='#{options[:on_end_interaction]}'></div>
