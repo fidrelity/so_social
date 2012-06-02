@@ -34,6 +34,22 @@ module SoSocial
             data-onstartinteraction='#{options[:on_start_interaction]}' data-onendinteraction='#{options[:on_end_interaction]}'></div>
         eos
       )
-    end 
+    end
+    
+    def reddit_button(options = {})
+      options[:type] = 1 unless options[:type] && options[:type].between?(1,3)
+      raw(
+        <<-eos
+          <script type="text/javascript">
+            reddit_url='#{options[:url]}';
+            reddit_target='#{options[:target]}';
+            reddit_title='#{options[:title]}';
+            reddit_bgcolor='#{options[:color]}';
+            reddit_bordercolor='#{options[:border_color]}';
+          </script>
+          <script type="text/javascript" src="http://www.reddit.com/static/button/button#{options[:type]}.js"></script>
+        eos
+      )
+    end
   end
 end
