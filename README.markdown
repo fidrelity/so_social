@@ -95,11 +95,28 @@ The Google +1 button supports the following attributes (for detailed documentati
 <%= googleplus_button(:size => 'tall', :annotation => 'bubble', :expand_to => 'top', :on_start_interaction => 'my_callback') %>
 ```
 
+## Reddit Parameters
+Currently supporting the interactive Reddit button and the following attributes (for detailed documentation see [this][reddit]):
+
+* type - value between 1, 2 and 3
+* url - sets the URL to be submitted/voted
+* target - sets the subreddit the link should be submitted to
+* title - sets the title
+* color - sets the buttons background color
+* border_color - sets the buttons border color
+
+### Example Usage
+
+```
+#erb
+<%= reddit_button(:type => 3, :title => "hi reddit", :url => 'fidrelity.at', :target => 'opensource', :color => 'e9e9e9') %>
+```
 
 [fb]: https://developers.facebook.com/docs/reference/plugins/like/
 [twitter]: https://dev.twitter.com/docs/tweet-button
 [twinfo]: https://dev.twitter.com/docs/tweet-button#optout
 [gplus]: https://developers.google.com/+/plugins/+1button/
+[reddit]: http://www.reddit.com/buttons/
 
 
 
